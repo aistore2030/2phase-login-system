@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login Form
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-card>
+    <ion-card-content>
+LOGIN
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+
+   
+ 
+ 
+ 
+   <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input [(ngModel)]="x.username" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input [(ngModel)]="x.password" type="password"></ion-input>
+    </ion-item>
+      
+    
+
+ 
+  </ion-list>
+
+  <div padding>
+ <ion-label > {{msg}}</ion-label>
+    <button ion-button block (click)="signin(x)">Sign In</button><br>
+	<button ion-button block (click)="signup()">Sign Up</button>
+	
+  </div>
+</ion-content>
