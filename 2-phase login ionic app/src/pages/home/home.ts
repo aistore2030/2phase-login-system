@@ -86,7 +86,9 @@ msg: String;
 	signup(){
    this.navCtrl.push(SignupPage, {}, {animate:false});
   }
-	
+	 navigateToOtherPage(): void {
+   this.navCtrl.push(GeolocationPage);
+}
 	
 
 }

@@ -49,11 +49,11 @@ url : String ='http://192.168.1.7:8082/apisakshamapp';
 		//store the data in the key value format
 
     } 
-register(email,password,mobile,username,ipaddress) {
+register(email,password,mobile,username,ipaddress,latitude,longitude) {
 		
 		console.log(url);
   //var url =  'http://contact.sakshamapp.com/Loginpage?email='+email+'&password='+password;
-     var url =  'http://192.168.1.10:98/test/Register?email='+email+'&password='+password+'&mobile='+mobile+'&name='+username+'&ipaddress=192.168.1.10';
+     var url =  'http://192.168.1.10:98/test/Register?email='+email+'&password='+password+'&mobile='+mobile+'&name='+username+'&latitude='+latitude+'&longitude='+longitude;
         
 		var response = this.http.get(url).map(res => res.json());
 		

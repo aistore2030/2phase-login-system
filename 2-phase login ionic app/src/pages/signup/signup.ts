@@ -24,6 +24,8 @@ movies: Array<any>;
 msg: String;
 ip:String;
 resultt:String;
+longitude:String;
+	latitude:String;
 markers = [];
   constructor(public navCtrl: NavController, public navParams: NavParams,private loginService: LoginService,private storage: Storage,private networkInterface: NetworkInterface, private geolocation: Geolocation) {
 
@@ -46,6 +48,7 @@ markers = [];
 	email:'',
 	resultt:'',
 	ip:''
+	
   };
 
   ionViewDidLoad() {
@@ -63,7 +66,18 @@ markers = [];
  //  console.log(result);
   // x.resultt=result;
   // });
-		 	this.loginService.register(x.email,x.password,x.mobile,x.username,x.ip).subscribe(
+   this.geolocation.getCurrentPosition().then((resp) => { console.log(resp.coords.latitude+resp.coords.longitude);
+  
+  
+ console.log(resp.coords.latitude);
+ console.log(resp.coords.longitude);
+ this.latitude=resp.coords.latitude;
+  console.log(this.latitude);
+ this.longitude=resp.coords.longitude;
+  console.log(this.longitude);
+ 
+
+		 	this.loginService.register(x.email,x.password,x.mobile,x.username,this.latitude,this.longitude).subscribe(
 				data => {
 						console.log('44545');
 				 	 this.movies = data ; 
@@ -87,7 +101,10 @@ markers = [];
 					console.log(err);
 				},
 				() => console.log('Movie Search Complete')
-			); 
+			)
+			}).catch((error) => {
+  console.log('Error getting location', error);
+});
 		/// this.navCtrl.push(TabsPage);
 	}
 }
