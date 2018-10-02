@@ -1,0 +1,86 @@
+.card.card-md {
+
+    margin: 0 !Important;
+        margin-bottom: 0px !Important;
+    margin-bottom: 0 !Important;
+    border-radius: 0 !Important;
+    width: 100% !Important;
+    font-size: 0 !Important;
+    background: 0 !Important;
+    box-shadow: none !Important;
+
+}
+.buttons-components-page ion-card-content {
+
+    background-color: #FEFEFE !Important;
+
+}
+.buttons-components-page ion-card img {
+
+    width: auto !Important;
+    height: auto!Important;
+    display: block !Important;
+    margin: auto !Important;
+
+}
+.button-block-md {
+
+    margin-top: 15px !Important;
+
+}
+.toolbar-title-md {
+
+    color: #fff !Important;
+
+
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+
+    color: #185fda !Important;
+
+}
+.text-center.title.title-md {
+
+    text-align: center;
+
+}
+.toolbar-background-md {
+    background: #488aff !Important;
+}
+.button-inner {
+
+    color: #000 !Important;
+
+}
+page-allproduct .masters {
+
+    background-color: transparent !Important;
+
+}
+.input-wrapper {
+
+    color: #488aff;
+
+}
+.tabs-md .tab-button[aria-selected="true"] .tab-button-icon {
+
+    color: #e84153 !Important;
+}
+.tabs-md .tab-button-icon {
+
+    color: #e84153 !Important;
+}
+.tabs-md[tabsLayout="icon-top"] .has-icon .tab-button-text {
+
+    color: #e84153 !Important;
+
+}
+.item-inner .button-inner {
+
+    color: #f02121;
+
+}
+.actionsheet{
+	
+	color: #488aff !Important;
+}
