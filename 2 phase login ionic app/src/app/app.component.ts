@@ -8,7 +8,7 @@ import { Storage } from '@ionic/storage';
 import { NetworkInterface } from '@ionic-native/network-interface';
 import { SignupPage } from '../pages/signup/signup';
 import { GeolocationPage } from '../pages/geolocation/geolocation';
-
+import { FirstPage } from '../pages/first/first';
 @Component({
   templateUrl: 'app.html'
 })

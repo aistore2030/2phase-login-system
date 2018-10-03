@@ -14,10 +14,11 @@ import { NetworkInterface } from '@ionic-native/network-interface';
 import { SignupPage } from '../pages/signup/signup';
 import { Geolocation } from '@ionic-native/geolocation';
 import { GeolocationPage } from '../pages/geolocation/geolocation';
+import { FirstPage } from '../pages/first/first';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,SignupPage,GeolocationPage
+    HomePage,SignupPage,GeolocationPage,FirstPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +28,7 @@ import { GeolocationPage } from '../pages/geolocation/geolocation';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,SignupPage,GeolocationPage
+    HomePage,SignupPage,GeolocationPage,FirstPage
 	
   ],
   providers: [

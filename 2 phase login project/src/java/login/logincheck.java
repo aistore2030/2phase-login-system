@@ -72,7 +72,7 @@ public class logincheck extends HttpServlet {
 
                 ////distance in kilometers
                 double dist = (distance / 1000);
-
+System.out.println(dist+"dist");
                 if (dist < 20) {
 
                     out.println("{\"Error\": \"False\" ,\"Message\": \"Login Successfully!!\"}");

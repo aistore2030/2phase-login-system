@@ -22,7 +22,7 @@ url : String ='http://192.168.1.7:8082/apisakshamapp';
 		
 		console.log(url);
   //var url =  'http://contact.sakshamapp.com/Loginpage?email='+email+'&password='+password;
-     var url =  'http://192.168.1.10:98/test/login?email='+email+'&password='+password;
+     var url =  'http://192.168.1.9:98/test/login?email='+email+'&password='+password;
         
 		var response = this.http.get(url).map(res => res.json());
 		
@@ -30,7 +30,7 @@ url : String ='http://192.168.1.7:8082/apisakshamapp';
 		console.log(response);
 		//sessionStorage.setItem('username','willie-santana@hotmail.com');
         return response;
-		//store the data in the key value format
+		
 
     }  
 	
@@ -38,7 +38,7 @@ url : String ='http://192.168.1.7:8082/apisakshamapp';
 		
 		console.log(url);
   //var url =  'http://contact.sakshamapp.com/Loginpage?email='+email+'&password='+password;
-     var url =  'http://192.168.1.10:98/test/logincheck?email='+email+'&longitude='+longitude+'&latitude='+latitude;
+     var url =  'http://192.168.1.9:98/test/logincheck?email='+email+'&longitude='+longitude+'&latitude='+latitude;
         
 		var response = this.http.get(url).map(res => res.json());
 		
@@ -46,22 +46,22 @@ url : String ='http://192.168.1.7:8082/apisakshamapp';
 		console.log(response);
 		//sessionStorage.setItem('username','willie-santana@hotmail.com');
         return response;
-		//store the data in the key value format
+	
 
     } 
 register(email,password,mobile,username,latitude,longitude) {
 		
 		console.log(url);
   //var url =  'http://contact.sakshamapp.com/Loginpage?email='+email+'&password='+password;
-     var url =  'http://192.168.1.10:98/test/Register?email='+email+'&password='+password+'&mobile='+mobile+'&name='+username+'&latitude='+latitude+'&longitude='+longitude;
+     var url =  'http://192.168.1.9:98/test/Register?email='+email+'&password='+password+'&mobile='+mobile+'&name='+username+'&latitude='+latitude+'&longitude='+longitude;
         
 		var response = this.http.get(url).map(res => res.json());
 		
 		
 		console.log(response);
-		//sessionStorage.setItem('username','willie-santana@hotmail.com');
+	
         return response;
-		//store the data in the key value format
+	
 
     }
 

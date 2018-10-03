@@ -39,7 +39,10 @@ public class Register extends HttpServlet {
         System.out.print("RegisterAPI");
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
-
+    response.addHeader("Access-Control-Allow-Origin", "*");
+        response.addHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE, HEAD");
+        response.addHeader("Access-Control-Allow-Headers", "X-PINGOTHER, Origin, X-Requested-With, Content-Type, Accept");
+        response.addHeader("Access-Control-Max-Age", "1728000");
         Connection con = null;
         Statement st = null;
         String name = request.getParameter("name");
@@ -73,7 +76,7 @@ public class Register extends HttpServlet {
             }
         } catch (Exception e) {
             out.println("{\"Error\": \"True\" ,\"Message\": \"Error " + e.getMessage() + "\"  }");
-            // out.println(e.getMessage());
+          
         } finally {
             try {
                 if (st != null) {

@@ -23,8 +23,8 @@ export class GeolocationPage {
 	//@ViewChild('map') mapElement: ElementRef;
 	//map: any;
 markers = [];
-longitude:String;
-	latitude:String;
+longitude:any;
+	latitude:any;
   constructor(public navCtrl: NavController, public navParams: NavParams, public platform: Platform,private geolocation: Geolocation,private loginService: LoginService) {
 	   platform.ready().then(() => {
     this.initMap();
